@@ -137,6 +137,28 @@ nav li a.casa {
     left: 13pc;
     top: 13pc;
     font-family: 'DM Sans', cursive;
+    animation: bounce 1s ease-in-out;
+}
+
+
+@keyframes bounce {
+    0% {
+        bottom: -50px;
+        opacity: 0;
+    }
+
+    50% {
+        bottom: 50px;
+        opacity: 1;
+    }
+
+    70% {
+        bottom: 30px;
+    }
+
+    100% {
+        bottom: 0;
+    }
 }
 
 .text2 {
@@ -200,7 +222,9 @@ nav li a.casa {
     left: 3pc;
 }
 
-.sub1, .sub2 ,.sub3{
+.sub1,
+.sub2,
+.sub3 {
     position: relative;
     left: 59pc;
     width: 440px;
@@ -228,4 +252,137 @@ nav li a.casa {
     top: 62pc;
     left: 40pc;
     border-radius: 10px;
+    box-shadow: 0 0 80px rgba(218, 219, 112, 0.623);
+}
+
+.text1,
+.text2,
+.text3,
+.text4,
+.imagen1 {
+    opacity: 0;
+    animation-name: slide-up;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0.5;
+        transform: translateY(70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contenedor3 {
+    position: relative;
+    top: 4pc;
+}
+
+.imgs-sc3 {
+    height: 470px;
+}
+
+.titulo-sc3 {
+    position: relative;
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--negro-anfitrion);
+    left: 11pc;
+    width: 0;
+    letter-spacing: 4px;
+    top: 2pc;
+}
+
+.descripcion-sc3 {
+    position: relative;
+    width: 30pc;
+    left: 45pc;
+    top: -9pc;
+    font-size: 15px;
+}
+
+.img1 {
+    position: relative;
+    height: 521px;
+    width: 812px;
+    left: 12pc;
+    top: -3pc;
+}
+
+.img2,
+.img3,
+.img4 {
+    position: relative;
+    width: 194px;
+    left: 64pc;
+    top: -36pc;
+}
+
+.imgs-sc3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-sc3-part2 {
+    position: relative;
+    font-size: 25px;
+    font-weight: lighter;
+    left: 12pc;
+    width: 300px;
+    top: 2pc;
+}
+
+.p-sc3 {
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+    left: 12pc;
+    width: 400px;
+    color: #405858;
+    top: 2pc;
+}
+
+.descripcion-sc3-part2 {
+    position: relative;
+    width: 500px;
+    font-size: 14px;
+    font-weight: lighter;
+    left: 42pc;
+    margin-top: -5pc;
+}
+
+.money {
+    position: relative;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #2d6fbb;
+    top: 2pc;
+    width: 100px;
+    left: 15pc;
+}
+
+.mi-boton {
+    position: relative;
+    display: inline-block;
+    padding: 12px 80px;
+    background-color: var(--negro-anfitrion);
+    color: var(--blanco-anfitrion);
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    left: 50pc;
+    top: -3pc;
+    border-radius: 7px;
+}
+
+.mi-boton:hover {
+    background-color: #000;
+    color: #fff;
 }
