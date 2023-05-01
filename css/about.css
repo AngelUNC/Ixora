@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+:root {
+    --blanco-anfitrion: #EAEAEA;
+    --blanco-secundario: #D9DFE5;
+    --negro-anfitrion: #2B2C32;
+}
+
+body {
+    max-height: 100px;
+  }
+
+.about-sc {
+    max-width: 10000px;
+    max-height: 0px;
+}
+
+.title-about {
+    position: relative;
+    font-size: 120px;
+    left: 40pc;
+    top: 15pc;
+    font-weight: bolder;
+    color: var(--negro-anfitrion);
+    width: 700px;
+    max-height: 500px;
+}
+
+.img-about {
+    position: relative;
+    width: 400px;
+    height: 800px;
+    left: 10pc;
+    border-radius: 10px;
+    top: -10pc;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    object-fit: cover;
+  }
+
+.desc-about {
+    position: relative;
+    width: 500px;
+    left: 41pc;
+    font-size: 15px;
+    font-weight: lighter;
+    color: var(--negro-anfitrion);
+    top: -35pc;
+    max-height: 500px;
+}
+
+.desc2-about {
+    position: relative;
+    width: 500px;
+    left: 41pc;
+    font-size: 15px;
+    font-weight: lighter;
+    color: var(--negro-anfitrion);
+    top: -32pc;
+    max-height: 500px;
+}
