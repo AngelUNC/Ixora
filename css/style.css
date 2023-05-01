@@ -212,6 +212,7 @@ nav li a.casa {
     color: white;
     margin: 0;
     height: 35pc;
+    border-radius: 15px;
 }
 
 .titulo {
@@ -262,12 +263,16 @@ nav li a.casa {
 .imagen1 {
     opacity: 0;
     animation-name: slide-up;
-    animation-duration: 2.5s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
 }
 
 @keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(70px);
+    }
     from {
         opacity: 0.5;
         transform: translateY(70px);
@@ -385,4 +390,88 @@ nav li a.casa {
 .mi-boton:hover {
     background-color: #000;
     color: #fff;
+}
+
+.contenedor4 {
+    position: relative;
+    background-color: var(--blanco-secundario);
+    padding: 20px;
+    color: white;
+    margin: 0;
+    height: 47pc;
+    border-radius: 15px;
+    top: 7pc;
+}
+
+.titulo-sc4 {
+    position: relative;
+    color: var(--negro-anfitrion);
+    font-size:55px;
+    font-weight: bold;
+    font-family: monospace;
+    left: 25pc;
+    width: 700px;
+    top: 3.5pc;
+}
+
+.img-contenedor4 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 11pc;
+    width: 0;
+    top: 4pc;
+}
+
+.img1-sc4 {
+    margin-right: 15px;
+}
+
+.alt-sc4 {
+    position: relative;
+    top: 6pc;
+}
+
+.text-img1-sc4 {
+    position: relative;
+    left: 13.5pc;
+    top: 4pc;
+    width: 500px;
+    font-size: 25px;
+    color: var(--negro-anfitrion);
+}
+
+.text-img2-sc4 {
+    position: relative;
+    left: 48pc;
+    width: 500px;
+    font-size: 25px;
+    top: 0.5pc;
+    color: var(--negro-anfitrion);
+}
+
+.mi-boton2 {
+    position: relative;
+    display: inline-block;
+    padding: 12px 80px;
+    background-color: var(--negro-anfitrion);
+    color: var(--blanco-anfitrion);
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    left: 60pc;
+    top: 2pc;
+    border-radius: 7px;
+}
+
+.mi-boton2:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.alt-sc4 {
+    color: var(--negro-anfitrion);
+    width: 550px;
+    font-weight: lighter;
+    font-size: 14px;
+    left: 12pc;
 }
