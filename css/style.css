@@ -10,7 +10,35 @@
 
 * {
     font-family: 'DM Sans', sans-serif;
+    opacity: 0;
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s
 }
+
+@keyframes bounce {
+    0% {
+        bottom: -50px;
+        opacity: 0;
+    }
+
+    50% {
+        bottom: 50px;
+        opacity: 1;
+    }
+
+    70% {
+        bottom: 30px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+
+  
 
 body {
     background-color: var(--blanco-anfitrion);
@@ -68,13 +96,14 @@ nav .dropdown:hover .dropdown-content {
 nav .dropdown-content {
     display: none;
     position: absolute;
-    top: 25px;
+    top: 26px;
     left: 0;
     min-width: 100px;
     z-index: 2;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
 }
 
 nav .dropdown-content a {
@@ -138,27 +167,6 @@ nav li a.casa {
     top: 13pc;
     font-family: 'DM Sans', cursive;
     animation: bounce 1s ease-in-out;
-}
-
-
-@keyframes bounce {
-    0% {
-        bottom: -50px;
-        opacity: 0;
-    }
-
-    50% {
-        bottom: 50px;
-        opacity: 1;
-    }
-
-    70% {
-        bottom: 30px;
-    }
-
-    100% {
-        bottom: 0;
-    }
 }
 
 .text2 {
@@ -229,7 +237,7 @@ nav li a.casa {
     position: relative;
     left: 59pc;
     width: 440px;
-    top: -14pc;
+    top: -40pc;
     font-size: 20px;
     font-weight: lighter;
     font-family: 'Nunito', sans-serif;
@@ -243,17 +251,18 @@ nav li a.casa {
     line-height: 1.5;
     width: 22pc;
     left: 970px;
-    top: -14.5pc;
+    top: -40.5pc;
 }
 
 .img-contenedor2 {
-    position: absolute;
+    position: relative;
     bottom: 0;
     height: 400px;
-    top: 62pc;
+    top: -14pc;
     left: 40pc;
     border-radius: 10px;
     box-shadow: 0 0 80px rgba(218, 219, 112, 0.623);
+    z-index: 3;
 }
 
 .text1,
@@ -273,6 +282,7 @@ nav li a.casa {
         opacity: 0;
         transform: translateY(70px);
     }
+
     from {
         opacity: 0.5;
         transform: translateY(70px);
@@ -283,6 +293,7 @@ nav li a.casa {
         transform: translateY(0);
     }
 }
+
 
 .contenedor3 {
     position: relative;
@@ -406,7 +417,7 @@ nav li a.casa {
 .titulo-sc4 {
     position: relative;
     color: var(--negro-anfitrion);
-    font-size:55px;
+    font-size: 55px;
     font-weight: bold;
     font-family: monospace;
     left: 25pc;
@@ -425,6 +436,14 @@ nav li a.casa {
 
 .img1-sc4 {
     margin-right: 15px;
+}
+
+.img-contenedor4 a img {
+    transition: filter 0.3s ease;
+}
+
+.img-contenedor4 a:hover img {
+    filter: brightness(50%);
 }
 
 .alt-sc4 {
@@ -474,4 +493,63 @@ nav li a.casa {
     font-weight: lighter;
     font-size: 14px;
     left: 12pc;
+}
+
+.footer {
+    position: relative;
+    background-color: var(--negro-anfitrion);
+    padding: 130px;
+    top: 7.5pc;
+   
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--blanco-anfitrion);
+}
+
+.img-footer {
+    position: relative;
+    max-height: 85px;
+    max-width: 100%;
+    top: 2pc;
+    left: 3pc;
+}
+
+.sc5-contactanos{
+    position: relative;
+    font-size: 10px;
+    color: var(--blanco-secundario);
+    left: 25pc;
+    font-weight: lighter;
+    top: 2pc;
+    width: 500px;
+}
+
+
+.sc5-contactanos h1{
+    position: relative;
+    font-size: 30px;
+    color: var(--blanco-anfitrion);
+    right: 1.5pc;
+}
+
+.unic-sc4 {
+    position: relative;
+    font-size: 10px;
+    color: var(--blanco-secundario);
+    left: 46pc;
+    font-weight: lighter;
+    top: -6.5pc;
+    width: 500px;
+}
+
+.unic-sc4 h1 {
+    position: relative;
+    font-size: 30px;
+    color: var(--blanco-anfitrion);
+    left: 1pc;
 }
