@@ -37,9 +37,6 @@
     }
 }
 
-
-  
-
 body {
     background-color: var(--blanco-anfitrion);
 }
@@ -500,7 +497,7 @@ nav li a.casa {
     background-color: var(--negro-anfitrion);
     padding: 130px;
     top: 7.5pc;
-   
+
 }
 
 .footer-container {
@@ -519,7 +516,7 @@ nav li a.casa {
     left: 3pc;
 }
 
-.sc5-contactanos{
+.sc5-contactanos {
     position: relative;
     font-size: 10px;
     color: var(--blanco-secundario);
@@ -530,7 +527,7 @@ nav li a.casa {
 }
 
 
-.sc5-contactanos h1{
+.sc5-contactanos h1 {
     position: relative;
     font-size: 30px;
     color: var(--blanco-anfitrion);
@@ -553,3 +550,5 @@ nav li a.casa {
     color: var(--blanco-anfitrion);
     left: 1pc;
 }
+
+/*FIN*/
