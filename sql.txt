@@ -1,0 +1,39 @@
+CREATE TABLE Perfil (
+    IdPerfil INT PRIMARY KEY,
+    Nombre VARCHAR(25) NOT NULL,
+    FechaNac DATE NOT NULL,
+    Correo VARCHAR(20) NOT NULL,
+    Numero VARCHAR(12),
+    Preferencias VARCHAR(100)
+);
+
+CREATE TABLE Casa (
+    IdCasa INT PRIMARY KEY,
+    Modelo VARCHAR(10) NOT NULL,
+    Cantidad INT NOT NULL,
+    Costo DECIMAL(10, 2) NOT NULL,
+    Lugar VARCHAR(100) NOT NULL,
+    IdPerfil INT,
+    FOREIGN KEY (IdPerfil) REFERENCES Perfil(IdPerfil)
+);
+
+CREATE TABLE Pedido (
+    IdPedido INT PRIMARY KEY,
+    IdCasa INT NOT NULL,
+    Cantidad INT NOT NULL,
+    CostoTotal DECIMAL(10, 2) NOT NULL,
+    Lugar VARCHAR(100) NOT NULL,
+    FechaPedido DATE NOT NULL,
+    FechaEntrega DATE NOT NULL,
+    IdPerfil INT,
+    FOREIGN KEY (IdCasa) REFERENCES Casa(IdCasa),
+    FOREIGN KEY (IdPerfil) REFERENCES Perfil(IdPerfil)
+);
+
+CREATE TABLE Registro (
+    IdRegistro INT PRIMARY KEY,
+    Nombre VARCHAR(25) NOT NULL,
+    Correo VARCHAR(25) NOT NULL,
+    Contraseña VARCHAR(25) NOT NULL,
+    FechaNac DATE NOT NULL
+);
